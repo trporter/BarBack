@@ -1,0 +1,27 @@
+<div id="yours">
+  <h1 id="yoursheader">Your Creations</h1>
+</div>
+<div class="poisonbody" class="content-body">
+  <div>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input class="search-bar" type="text" class="form-control" placeholder="Hey Bartender">
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <%= render "./cocktails/items" %>
+  </div>
+</div>
+<%= paginate @cocktails %>
+
+
+<script>
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('#yours').css('top', -(scrolled * 0.4) + 'px');
+  }
+  $(window).scroll(function(e){
+    parallax();
+  });
+</script>

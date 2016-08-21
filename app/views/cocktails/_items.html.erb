@@ -1,0 +1,8 @@
+<% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-6 col-md-6 text-center cocktail" id="window">
+      <% if cocktail.image %>
+        <p class="cocktail-img"><%= image_tag cocktail.image.url(:large)%></p>
+      <% end %>
+      <p style="font-size: 30px"><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+    </div>
+<% end %>

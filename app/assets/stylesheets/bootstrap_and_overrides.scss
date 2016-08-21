@@ -1,0 +1,346 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-default {
+  background-color: #B22222;
+  height: 75px;
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+}
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  font-family: Verdana;
+  font-size: 25px;
+  padding-top: 25px
+}
+
+.navbar .nav > li > a {
+  color:  white;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.navbar .navbar-form {
+  padding-top: 10px
+}
+h1 {
+  text-align: center;
+}
+#homepage {
+  background-image: url("http://www.lamourfou.be/img/cocktails/pics/amourfou-cocktails-classics-old-fashioned.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#homebody {
+  z-index: 1;
+  margin-top: 495px;
+  height: 100%;
+  background-color: white;
+}
+
+#anatomy {
+  color: white;
+  padding-top: 200px;
+  padding-left: 650px;
+  font-size: 50px
+}
+
+#intro {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px
+}
+
+.homep {
+  font-size: 20px;
+  font-family: Goudy Old Style;
+}
+
+#introp {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+#glass {
+  // padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: -725px
+
+}
+
+#glassp {
+  padding-right: 55%;
+  padding-left: 5%
+}
+#glass_text {
+  text-align: center;
+}
+
+#champagne_glass {
+  float: right;
+  width: 12%;
+  margin-top: -300px;
+  margin-right: 75px;
+
+}
+
+#champagne_glass:hover {
+  transition: width 0.5s ease;
+  width: 14%
+}
+
+#cocktail_glas {
+  float: right;
+  width: 11.25%;
+  margin-top: -300px;
+  margin-right: 248px
+}
+
+#cocktail_glas:hover {
+  transition: width 0.5s ease;
+  width: 13%
+}
+
+#highball_glass {
+  float: right;
+  width: 16.95%;
+  margin-top: -300px;
+  margin-right: 410px
+}
+
+#highball_glass:hover {
+  transition: width 0.5s ease;
+  width: 20%
+}
+
+#tools {
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: 270px
+}
+
+#tool_text {
+  text-align: center;
+}
+
+#toolp {
+  padding-right: 5%;
+  padding-left: 55%
+}
+
+#tool_image {
+  margin-top: -350px
+}
+
+#liquor_text {
+  text-align: center;
+}
+
+#liquor {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: -725px
+}
+
+#liquorp {
+  padding-right: 55%;
+  padding-left: 5%
+}
+
+#liquor_image {
+  margin-top: -350px;
+  margin-left: 625px;
+  width: 55%;
+}
+
+#garnish_text {
+  text-align: center;
+}
+
+#garnish {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: -700px
+}
+
+#garnishp {
+  padding-left: 55%;
+  padding-right: 5%
+}
+
+#garnish_image {
+  height: 10%
+}
+
+.carousel {
+  width: 50%;
+  margin-top: -325px;
+  margin-left: 50px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  color: black;
+}
+
+#about {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#photo {
+  width: 20%;
+}
+
+#window {
+  width: 350px;
+}
+
+#window a {
+  color: black;
+}
+
+#poison {
+  background-image: url("http://www.drinkamara.com/wp-content/uploads/2016/03/blue-cocktail-with-strayberry.jpg");
+  background-size: 100%;
+  background-position: top;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.poisonbody {
+  z-index: 1;
+  margin-top: 495px;
+  height: 100%;
+  background-color: white;
+}
+
+#preview:hover {
+  border: 2px;
+  border-color: #B22222;
+}
+
+#posionheader{
+  color: white;
+  padding-top: 200px;
+  margin-left: -600px;
+  margin-top: -10px;
+  font-size: 50px
+}
+
+.container {
+  padding-top: 60px;
+}
+
+#needed {
+  float: left;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+#needed h4 {
+  margin-left: -170px;
+  text-decoration: underline;
+}
+
+#needed li {
+  text-align: left;
+}
+
+#instructions {
+  float: right;
+  margin-right: 300px;
+  margin-top: 50px;
+}
+
+#favorite {
+  font-size: 15px;
+  text-align: center;
+}
+
+#search-bar {
+  border: none;
+}
+
+#faveindex {
+  background-image: url("http://4.bp.blogspot.com/-Upohy2VHoC8/VDgS0c8KB1I/AAAAAAAALao/lI_bKNLOlKw/s1600/P1050357.JPG");
+  background-size: 100%;
+  background-position: top;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#faveheader{
+  color: white;
+  padding-top: 200px;
+  margin-left: 700px;
+  margin-top: -50px;
+  font-size: 50px
+}
+
+#favebody {
+  z-index: 1;
+  margin-top: 495px;
+  height: 100%;
+  background-color: white;
+}
+
+#signin {
+  height: 100%;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-image: url("http://6iee.com/data/uploads/5/690407.jpg");
+}
+
+#creation {
+  color: white;
+  padding-left: 300px;
+  padding-right: 300px;
+  background-image: url("http://www.milroys.co.uk/images/inner-hero-milroys-bar.jpg");
+  background-size: auto;
+  margin-top: -20px;
+}
+
+#new_cocktail {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#yoursheader{
+  color: white;
+  padding-top: 200px;
+  margin-left: -600px;
+  margin-top: -10px;
+  font-size: 50px
+}
+
+#yours {
+  background-image: url("http://www.botanicalsformixology.com/rs/bg-05.jpg");
+  background-size: 100%;
+  background-position: top;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}

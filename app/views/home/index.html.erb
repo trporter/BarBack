@@ -1,0 +1,89 @@
+<div id="homepage">
+  <h1 id="anatomy">Anatomy of a Cocktail</h1>
+</div>
+<div id="homebody">
+  <div id="starter">
+    <h2 id="intro">So what is a cocktail?</h2>
+    <p class="homep" id="introp">A tough question to answer. In this case, a mix of different drinks and ingredients combined to create what hopefully is a delightful and delicious treat for literally any occasion. Champagne cocktails for your birthday, Hot Toddy on Christmas Eve, Old fashioned (pictured above) for dinner with your client, truly any occasion. For those who know nothing about the joys that a good cocktail can bring, why not start by reading below.</p>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <div id="glass_text">
+      <h2 id="glass">The Glass</h2>
+      <p class="homep" id="glassp">Before going into what goes in a cocktail, lets talk about what the cocktail itself goes into. Not too lost? Good. There are numerous different kinds of glasses a cocktail can go into. Each with its own purpose. Why does it matter? Fair, this isn't obvious for the most part. But usually, it does matter. A champagne flute helps maintain fizz, a cocktail glass (commonly known as martini glass) keeps your hand away from the drink so it stays colder longer, highball glasses allow for larger amounts of ice for your refreshing summer cocktail, the list goes on. But for now lets move onto the next topic, your tools.</p>
+    </div>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Champagne_flute_and_bottle.jpg" id="champagne_glass" />
+      <img src="http://www.foodchannel.com/media/uploads/galleries/mad_men_martini.jpg" id="cocktail_glas" />
+      <img src="http://www.bonappetit.com/wp-content/uploads/2015/09/tequila-highball-2000x2000.jpg" id="highball_glass"/>
+    </div>
+  </div>
+  </div>
+  <hr>
+  <div id="the_tools">
+    <div id="tool_text">
+      <h2 id="tools">The Tools</h2>
+      <p class="homep" id="toolp">What do an artist and a carpenter have in common? They're both nothing without their tools. Same goes for a bartender! The vast majority of cocktails require some kind of tool. The most common tool is undoubtedly a shaker, followed by the muddler. In fact, put those down first on the list of essentials when making your home bar. Others include a jigger, stir spoon, a hawthorne strainer, and many more. But have those on hand you'll be hosting cocktail parties in no time. Once you get the hang of those, go ahead and expand your tool belt.</p>
+    </div>
+    <div>
+      <img src="https://www.techni-pros.com/categories/143678341450b8e0a4b1e55.preview_620.jpg" id="tool_image" />
+    </div>
+  </div>
+  <hr>
+  <div id="liquor_text">
+    <h2 id="liquor">The Liquor</h2>
+    <p id="liquorp" class="homep">Without a doubt the most important part of the cocktail. Though of course, it doesn't necessarily have to be liquor. There are plenty of alcohol free options. But for now we'll focus on the alcoholic ones. Cocktails are usually split into catagories based on the primary liquor ingredient. For example, a Moscow Mule is a vodka cocktail and a margarita is a tequila cocktail. Keep in mind that not all cocktails easily fit in a liquor category. This can be for any reason, but most commonly it's because the primary liquor is in a category of its own.
+  </div>
+  <div>
+    <img src="http://www.co.worcester.md.us/sites/default/files/styles/slideshow/public/liquor.png?itok=KHGN7RwI"  id="liquor_image"/>
+    <hr>
+    <div id="garnish_text">
+      <h2 id="garnish">The Garnish</h2>
+      <p id="garnishp" class="homep">Finally, the cherry on top. In some cases literally. Sometimes a cocktail just needs that last little touch. In comes the garnish. A well designed garnish not only adds to the aesthetic of the cocktail, but to the taste as well. You wouldn't put a slice of cheese on top of a sunday, its not only unappealing but it most likely wouldn't taste good at all. A garnish doesn't even need to be edible. A good example is a Maitai and its umbrella garnish. Obviously its not for eating, but it undoubtedly looks good.
+    </div>
+  </div>
+</div>
+
+<div id="carousel-example-generic" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1-->
+    <div class="item active">
+      <img src="/assets/garnish.jpg" alt="Slide 1" />
+    </div>
+    <!-- Slide 2-->
+    <div class="item">
+      <img src="/assets/garnish2.jpg" alt="Slide 2" />
+    </div>
+    <!-- Slide 3-->
+    <div class="item">
+      <img src="/assets/garnish3.jpg" alt="Slide 3" />
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
+
+  <script>
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      $('#homepage').css('top', -(scrolled * 0.4) + 'px');
+    }
+    $(window).scroll(function(e){
+      parallax();
+    });
+    $('.carousel').carousel({
+      interval: 4000
+    })
+  </script>

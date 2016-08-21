@@ -1,0 +1,18 @@
+<div id="faveindex">
+  <h1 id="faveheader">Your Favorites</h1></h1>
+</div>
+<div id="favebody" class="content-body">
+  <div class="container">
+    <%= render "./cocktails/items" %>
+  </div>
+  <%= paginate @cocktails %>
+</div>
+<script>
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('#faveindex').css('top', -(scrolled * 0.4) + 'px');
+}
+$(window).scroll(function(e){
+  parallax();
+});
+</script>

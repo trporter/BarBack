@@ -1,0 +1,49 @@
+<h1><%= @cocktail.name %><h1>
+<%= image_tag @cocktail.image.url(:large) %>
+<p class="homep" style="margin-top: 15px"><%= @cocktail.desrciption %></p>
+<div id="needed">
+  <h3>What you'll need</h3>
+  <h4>Liquor</h4>
+  <% @cocktail.liquor.split(',').each do |c|%>
+  <ul>
+    <li class="homep"><%= c %></li>
+  </ul>
+  <% end %>
+  <h4>Tools</h4>
+  <% @cocktail.tools.split(',').each do |c|%>
+  <ul>
+    <li class="homep"><%= c %></li>
+  </ul>
+  <% end %>
+  <h4>Glass</h4>
+  <% @cocktail.glass.split(',').each do |c|%>
+  <ul>
+    <li class="homep"><%= c %></li>
+  </ul>
+  <% end %>
+  <h4>Garnish</h4>
+  <% @cocktail.garnish.split(',').each do |c|%>
+  <ul>
+    <li class="homep"><%= c %></li>
+  </ul>
+  <% end %>
+</div>
+<div id="instructions">
+<h3>Instructions</h3>
+<ol>
+  <% @cocktail.instruction.split(',').each do |c|%>
+    <li class="homep"><%= c %></li><br>
+  <% end %>
+</ol>
+</div>
+<div id="favorite">
+  <% if @cocktail.favorited_by?(current_user) %>
+    <%= link_to "Unfavorite ", cocktail_favorite_path(@cocktail, @cocktail.favorite_for(current_user)), method: :delete, data: {disable_with: "..."} %>|
+  <% else %>
+    <%= link_to "Favorite ", cocktail_favorites_path(@cocktail), method: :post %>|
+  <% end %>
+  <% if can? :manage, @cocktail %>
+    <%= link_to "Edit ", edit_cocktail_path(@cocktail) %>|
+    <%= link_to " Delete", cocktail_path(@cocktail), method: :delete, data:   {confirm: "Are you sure?"} %>
+  <% end %>
+</div>

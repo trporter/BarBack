@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script>
+    $(document).on('click', 'body', function(){
+      <% if current_page?(controller: 'cocktails', action: 'index')%>
+      <% @cocktails = Cocktail.all %>
+      $('#search-bar').bind("keyup", function(){
+        $('.container').html("<%= j render :partial => 'cocktails/items', :object => @cocktails %>");
+        var searchTerm = $(this).val().toLowerCase();
+        var searchCocktails = $('.cocktail');
+        searchCocktails.hide();
+        searchCocktails.filter(function(){
+          var regexp = new RegExp('\.*' + searchTerm + '\.*', "gi");
+          return regexp.test(($(this)).html())
+        }).show();
+      });
+      <% end %>
+    });
+  </script>
+</head>
+<body>
+<%= render 'layouts/navbar' %>
+<%= yield %>
+
+</body>
+</html>
