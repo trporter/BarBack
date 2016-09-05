@@ -24,7 +24,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Profile <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="http://localhost:3000/favorites">Favorites</a></li>
-              <li><a href="#">Your Cabinet</a></li>
+              <li><%= link_to "Your Cabinet", cabinets_path %></li>
               <li><a href="http://localhost:3000/user_cocktails">Your Cocktails</a></li>
               <li><%= link_to "Profile", user_path(current_user.id) %></li>
               <li role="separator" class="divider"></li>

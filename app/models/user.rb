@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_secure_password
-  
+
+  has_one :cabinet
   has_many :cocktails, dependent: :nullify
   has_many :favorites, dependent: :nullify
   has_many :favorited_cocktails, through: :favorites, source: :cocktail

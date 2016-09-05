@@ -344,3 +344,22 @@ h1 {
   position: fixed;
   z-index: -1;
 }
+
+#cabinet {
+  background-image: url("https://benridderingsblog.files.wordpress.com/2014/09/img_30022.jpg");
+  background-size: 100%;
+  background-position: top;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#cabinetheader{
+  color: white;
+  padding-top: 200px;
+  margin-left: -600px;
+  margin-top: -10px;
+  font-size: 50px
+}

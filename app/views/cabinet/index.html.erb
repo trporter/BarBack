@@ -1,0 +1,18 @@
+<div id="cabinet">
+  <h1 id="cabinetheader">Your Cabinet</h1>
+</div>
+<div class="cabinetbody" class="content-body">
+  <div class="container">
+    <%= render "../cocktails/items" %>
+  </div>
+</div>
+<%= paginate @cocktails %>
+<script>
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('#cabinet').css('top', -(scrolled * 0.4) + 'px');
+  }
+  $(window).scroll(function(e){
+    parallax();
+  });
+</script>

@@ -1,0 +1,9 @@
+<h1>What do you have?</h1>
+<div id="creation">
+  <%= simple_form_for @cabinet do |f| %>
+  <h1>Create a Cocktail</h1>
+    <%= f.input :tools, placeholder: "Ex. muddler, shaker, stirring rod..." %>
+    <%= f.input :liquor, placeholder: "Ex. .5oz whiskey, 1oz lemon juice, .25oz simple syruo..." %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>

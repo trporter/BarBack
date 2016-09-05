@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :user_cocktails
 
+  resources :cabinets
+
   resources :cocktails do
 
     resources :favorites, only: [:create, :destroy]
