@@ -28,7 +28,6 @@ class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.order("name ASC").page(params[:page]).per(9)
-    @cocktail = current_user.cocktails
   end
 
   def edit
