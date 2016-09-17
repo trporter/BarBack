@@ -1,0 +1,1 @@
+<%= link_to "Unfavorite", cocktail_favorite_path(@cocktail, @cocktail.favorite_for(current_user)), method: :delete, data: {disable_with: "..."} %>

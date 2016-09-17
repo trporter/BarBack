@@ -6,14 +6,20 @@ before_action :authenticate_user!
   end
 
   def create
-    cocktail = Cocktail.find params[:cocktail_id]
-    l = Favorite.new(cocktail: cocktail, user: current_user)
-    if l.save
-      redirect_to cocktail_path(cocktail), notice: "Favorited!"
+  @favorite          = current_user.favorites.new
+  cocktail          = Cocktail.find params[:cocktail_id]
+  @favorite.cocktail = cocktail
+  respond_to do |format|
+    if @favorite.save
+      format.html { redirect_to cocktail, notice: "Favorited" }
+      format.js { render :create_success }
     else
-      redirect_to cocktail_path(cocktail), alert: "Favorited already"
+      format.html { redirect_to cocktail "Can't favorite" }
+      format.js   { render :create_failure }
     end
   end
+end
+
 
   def destroy
     favorite = Favorite.find params[:id]

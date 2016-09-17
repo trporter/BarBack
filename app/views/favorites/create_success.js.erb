@@ -1,0 +1,3 @@
+$("#favorites").prepend("<%= j(render('/favorites/favorite', {favorite: @favorite})) %>");
+<% @favorite = Favorite.new %>
+$("#favorite-form").html("<%= j render 'form' %>");
