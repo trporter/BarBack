@@ -265,6 +265,8 @@ h1 {
   float: right;
   margin-right: 300px;
   margin-top: 50px;
+  border-width: 5px;
+  border-style: solid;
 }
 
 #favorite {
@@ -368,4 +370,8 @@ h1 {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+ol {
+  padding-right: 20px
 }
