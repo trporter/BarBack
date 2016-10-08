@@ -7,6 +7,7 @@
   border: none;
   border-radius: 0px;
   width: 100%;
+  margin-bottom: 0px;
 }
 .navbar-default .navbar-brand {
   color: #FFFFFF;
@@ -246,34 +247,6 @@ h1 {
   padding-top: 60px;
 }
 
-#needed {
-  float: left;
-  margin-left: 300px;
-  margin-top: 50px;
-}
-
-#needed h4 {
-  margin-left: -170px;
-  text-decoration: underline;
-}
-
-#needed li {
-  text-align: left;
-}
-
-#instructions {
-  float: right;
-  margin-right: 300px;
-  margin-top: 50px;
-  border-width: 5px;
-  border-style: solid;
-}
-
-#favorite {
-  font-size: 15px;
-  text-align: center;
-}
-
 #search-bar {
   border: none;
 }
@@ -372,6 +345,36 @@ h1 {
   width: 100%;
 }
 
-ol {
-  padding-right: 20px
+#show_header {
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-bottom: 80px;
+  height: 400px;
+  background-color: grey;
+}
+
+#cocktail_profile {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  width: 600px;
+  height: 240px;
+  background-color: white;
+}
+
+#cocktail_profile img {
+  margin-top: -80px;
+  margin-left: -80px;
+}
+
+#cocktail_description {
+  margin-top: -200px;
+  margin-left: 220px;
+}
+
+#cock_p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }

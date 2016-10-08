@@ -38,6 +38,8 @@ gem "mini_magick"
 
 gem 'cancancan'
 
+gem 'react-rails'
+
 gem 'kaminari'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

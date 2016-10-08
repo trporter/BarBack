@@ -1,45 +1,16 @@
-<h1><%= @cocktail.name %><h1>
-<%= image_tag @cocktail.image.url(:large) %>
-<p class="homep" style="margin-top: 15px"><%= @cocktail.desrciption %></p>
-<div id="needed">
-  <h3>What you'll need</h3>
-  <h4>Liquor</h4>
-  <% @cocktail.liquor.split(',').each do |c|%>
-  <ul>
-    <li class="homep"><%= c %></li>
-  </ul>
-  <% end %>
-  <h4>Tools</h4>
-  <% @cocktail.tools.split(',').each do |c|%>
-  <ul>
-    <li class="homep"><%= c %></li>
-  </ul>
-  <% end %>
-  <h4>Glass</h4>
-  <% @cocktail.glass.split(',').each do |c|%>
-  <ul>
-    <li class="homep"><%= c %></li>
-  </ul>
-  <% end %>
-  <h4>Garnish</h4>
-  <% @cocktail.garnish.split(',').each do |c|%>
-  <ul>
-    <li class="homep"><%= c %></li>
-  </ul>
-  <% end %>
+<div id="show_header">
+  <div id="cocktail_profile">
+    <%= image_tag @cocktail.image.url(:large) %>
+    <div id="cocktail_description">
+      <p id="cock_p" class="homep" style="margin-top: 15px">"<%= @cocktail.desrciption %>"</p>
+    </div>
+  </div>
 </div>
-<div id="instructions">
-<h3>Instructions</h3>
-<ol>
-  <% @cocktail.instruction.split(',').each do |c|%>
-    <li class="homep"><%= c %></li><br>
-  <% end %>
-</ol>
-</div>
-<div id="favorite">
-  <%= render "/favorites/favorites" %>
-  <% if can? :manage, @cocktail %>
-    <%= link_to "Edit ", edit_cocktail_path(@cocktail) %>|
-    <%= link_to " Delete", cocktail_path(@cocktail), method: :delete, data:   {confirm: "Are you sure?"} %>
-  <% end %>
+<div id="cocktail_info">
+  <div id="needed">
+
+  </div>
+  <div id="cocktail_instructions">
+
+  </div>
 </div>
